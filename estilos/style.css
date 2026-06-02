@@ -1,1 +1,49 @@
 @charset 'UTF-8';
+/* 
+    #71bba9 
+    #7c29a3
+*/
+ body {
+    background-image: linear-gradient(to top, #71bba9, #7c29a3);
+    height: 95vh;
+    font-family: Arial, sans-serif;
+    margin: 23px;
+ }
+ #login {
+    background-color: white;
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    height: 50%;
+ }
+ #imagem {
+   
+ }
+ #formulario h1 {
+    text-align: center;
+    font-weight: 750;
+ }
+ #Entrar {
+    background-color: #71bba9;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+ }
+ #senha {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #71bba9;
+    border-radius: 5px;
+    color: #71bba9;
+    height: 40px;
+ }
+ .campo{
+    background-color: #71bba9;
+    width: 98%;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid #7c29a3;
+ }

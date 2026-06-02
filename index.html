@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_box" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=key" />
 </head>
 <body>
     <main>
-        <section id="Login">
+        <section id="login">
             <div id="imagem">
-
+                
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu aambiente.</p>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php">
+                    <p>
+                        <label for="iemail">  
+                        <span class="material-symbols-outlined">account_box</span>
+                        </label>
+                        <input type="email" name="email" id="iemail" class="campo" required>
+                    </p>
+                    <p>
+                        <label for="isen">
+                        <span class="material-symbols-outlined">key</span>
+                        </label>
+                        <input type="password" name="sen" id="isen" class="campo" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar" id="Entrar">
+                    </p>
+                    <p>
+                        <input type="submit" value="Esqueci a senha" id="senha">
+                    </p>
+                </form>
             </div>
         </section>
     </main>
