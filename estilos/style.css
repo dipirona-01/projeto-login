@@ -3,47 +3,41 @@
     #71bba9 
     #7c29a3
 */
- body {
-    background-image: linear-gradient(to top, #71bba9, #7c29a3);
-    height: 95vh;
-    font-family: Arial, sans-serif;
-    margin: 23px;
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body, html {
+    background-color: #7c29a3;
+    height: 100vh;
+    margin: 100vw;
  }
- #login {
+ main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+ }
+ section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
     background-color: white;
-    width: 50%;
-    border-radius: 20px 0px 0px 20px;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    border: 0px 0px 10px  rgba(0, 0, 0, 0.473);
+ }
+ section#login > div#imagem {
+    background:  #7c29a3 url(../imagem/pexels-luis-ruiz-1774931\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+ }
+ section#login > div#formulario {
     padding: 10px;
-    height: 50%;
- }
- #imagem {
-   
- }
- #formulario h1 {
-    text-align: center;
-    font-weight: 750;
- }
- #Entrar {
-    background-color: #71bba9;
-    color: white;
-    border: none;
-    height: 40px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
- }
- #senha {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #71bba9;
-    border-radius: 5px;
-    color: #71bba9;
-    height: 40px;
- }
- .campo{
-    background-color: #71bba9;
-    width: 98%;
-    height: 30px;
-    border-radius: 10px;
-    border: 3px solid #7c29a3;
+    display: block;
  }
