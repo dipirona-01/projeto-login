@@ -1,0 +1,44 @@
+@charset ' UTF-8';
+/*
+ TYPICALS MEDIAS QUERYS 
+Pequenas telas: até 600px
+Celulares: 600px a 768px
+Tablets: 768px a 992px
+Desktops: 992px a 1200px
+Telas grandes: acima de 1200px
+*/
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #7c29a3, #71bba9);
+    }
+    section#login {
+        width: 90vw;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 993px) {
+    body {
+        background-image: linear-gradient(to top, #7c29a3, #71bba9);
+    }
+    section#login {
+        width : 900px;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}

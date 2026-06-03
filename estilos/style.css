@@ -11,8 +11,8 @@
 }
  body, html {
     background-color: #7c29a3;
+    width: 100vw;
     height: 100vh;
-    margin: 100vw;
  }
  main{
     height: 100vh;
@@ -31,8 +31,12 @@
     height: 500px;
     border-radius: 20px;
     border: 0px 0px 10px  rgba(0, 0, 0, 0.473);
+
+   transition: width 0.5s, height 0.5s;
+   transition-timing-function: ease;
  }
  section#login > div#imagem {
+    display: block;
     background:  #7c29a3 url(../imagem/pexels-luis-ruiz-1774931\ \(1\).jpg) no-repeat;
     background-size: cover;
     height: 200px;
