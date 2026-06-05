@@ -3,27 +3,34 @@
     #71bba9 
     #7c29a3
 */
+
 * {
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
 }
+
+
  body, html {
    background-color: #7c29a3;
    width: 100vw;
    height: 100vh;
  }
+
+
  main{
    height: 100vh;
    width: 100vw;
    position: relative;
  }
+
+
  section#login{
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   
    overflow: hidden;
 
    background-color: white;
@@ -34,35 +41,71 @@
 
    transition: width 0.5s, height 0.5s;
    transition-timing-function: ease;
+   transform: translate(-50%, -50%);
  }
+
+
  section#login > div#imagem {
    display: block;
    background:  #7c29a3 url(../imagem/pexels-luis-ruiz-1774931\ \(1\).jpg) no-repeat;
    background-size: cover;
    height: 200px;
  }
+
+
  section#login > div#formulario {
    padding: 10px;
    display: block;
  }
+
+
  div#formulario > h1 {
    text-align: center;
    margin-bottom: 10px;
  }
+
+
  div#formulario > p {
    font-size: 0.8em;
  }
+
+
  div.campo {
   background-color: #7c29a3;
+  border: 2px solid #7c29a3;
   width: 100%;
   height: 40px;
   display: block;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 5px 0px 5px 0px;
  }
+
+
  div.campo > label {
   display: none;
  }
+
+
+ div.campo > span {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+ }
+
+
+div.campo > input {
+  background-color: #77bba9;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-12px);
+}
+
+
  input[type=submit] {
   display: block;
   font-size: 1em;
@@ -73,10 +116,14 @@
   border: none;
   border-radius: 5px;
  }
+
+
  input[type=submit]:hover {
   background-color: #416b61;
   cursor: pointer;
  }
+
+
  a.botao {
   display: block;
   font-size: 1em;
@@ -91,6 +138,8 @@
   padding-top: 5px;
   margin-top: 10px;
  }
+
+
  a.botao:hover {
   background-color: #7c29a3;
   color: white;
