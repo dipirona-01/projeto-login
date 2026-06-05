@@ -28,7 +28,7 @@
 
    background-color: white;
    width: 250px;
-   height: 500px;
+   height: 515px;
    border-radius: 20px;
    border: 0px 0px 10px  rgba(0, 0, 0, 0.473);
 
@@ -43,7 +43,7 @@
  }
  section#login > div#formulario {
    padding: 10px;
-display: block;
+   display: block;
  }
  div#formulario > h1 {
    text-align: center;
@@ -51,4 +51,48 @@ display: block;
  }
  div#formulario > p {
    font-size: 0.8em;
+ }
+ div.campo {
+  background-color: #7c29a3;
+  width: 100%;
+  height: 40px;
+  display: block;
+  border-radius: 5px;
+  margin: 5px 0px 5px 0px;
+ }
+ div.campo > label {
+  display: none;
+ }
+ input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #77bba9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+ }
+ input[type=submit]:hover {
+  background-color: #416b61;
+  cursor: pointer;
+ }
+ a.botao {
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #97e9d3;
+  border: 1px solid #77bba9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #446d62;
+  padding-top: 5px;
+  margin-top: 10px;
+ }
+ a.botao:hover {
+  background-color: #7c29a3;
+  color: white;
+  cursor: pointer;
  }
